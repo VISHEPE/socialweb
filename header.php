@@ -14,16 +14,18 @@
             <nav class="main-nav">
                 <ul>
                     <li><a href="index.php">Home</a></li>
-                    <li><a href="petitions.html">Petitions</a></li>
-                    <li><a href="constitution.html">Constitution</a></li>
-                    <li><a href="polls.php">Opinion Polls</a></li>
-                    <li><a href="feedback.html">Policy Feedback</a></li>
-                    <li><a href="#feedback">Post a poll</a></li>
-                    <li><a href="reg.html">create account</a></li>
+                    <li><a href="petitions.php">Petitions</a></li>
+                    <li><a href="constitution.php">Constitution</a></li>
+                   
+                    <li><a href="feedback.php">Policy Feedback</a></li>
+                    <li><a href="post_poll.php">Post a poll</a></li>
+                    <li><a href="Quote.php">Days' quote</a></li>
+                    
                 </ul>
             </nav>
         </div>
 </header>
+
 
         </body>
         </html>

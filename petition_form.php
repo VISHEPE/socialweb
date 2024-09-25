@@ -15,7 +15,7 @@
         
         <!-- Sign Petition Form -->
         <form method="POST" action="sign_petition.php">
-            <input type="hidden" name="petition_id" value="1"> <!-- Assuming a petition_id of 1 -->
+            <input type="hidden" name="petition_id" value="1"> 
 
             <label for="name">Your Name:</label>
             <input type="text" id="name" name="name" required>

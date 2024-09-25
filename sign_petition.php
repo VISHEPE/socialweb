@@ -1,11 +1,11 @@
 <?php
 // sign_petition.php
 
-include('config.php'); // Database connection
+include('config.php'); 
 
 // Check if the form is submitted
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    // Get form data
+   
     $petition_id = intval($_POST['petition_id']);
     $name = mysqli_real_escape_string($conn, $_POST['name']);
     $comment = mysqli_real_escape_string($conn, $_POST['comment']);

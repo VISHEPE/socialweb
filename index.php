@@ -15,11 +15,12 @@
                 <ul>
                     <li><a href="index.php">Home</a></li>
                     <li><a href="petitions.php">Petitions</a></li>
-                    <li><a href="constitution.html">Constitution</a></li>
-                    <li><a href="polls.php">Opinion Polls</a></li>
-                    <li><a href="feedback.html">Policy Feedback</a></li>
+                    <li><a href="constitution.php">Constitution</a></li>
+                    <li><a href="feedback.php">Policy Feedback</a></li>
                     <li><a href="post_poll.php">Post a poll</a></li>
-                    <li><a href="reg.php">create account</a></li>
+                    <li><a href="Quote.php">Days' Quote</a></li>
+                  
+                    
                 </ul>
             </nav>
         </div>
@@ -33,21 +34,21 @@
     <div class="container1">
         <img src="vicky.png" alt="Placeholder Image" class="left-image">
         <h1>Voices of Dissent: The Essence of Social Justice in Democracy</h1>
-        <p>Quotes on social justice emphasize that justice is a right for all, highlighting the importance of </p>
-        <p>questioning the government as a civic duty. They celebrate dissent as essential to democracy, urging</p>
-        <p>marginalized voices to challenge established norms to promote equality and reshape governance for every citizen.</p>
+        <p>Empowering Voices, Shaping the Future </p>
+        <p>Join the conversation! Share your thoughts, provide feedback on policies, and collaborate with fellow</p>
+        <p>citizens to influence decisions that shape our communities. Together, we create a more inclusive and transparent society where every voice counts.</p>
     </div>
 
     <div class="container2">
         <div class="design1">
-        <p>....Quotes on social justice emphasize that justice is a right for all, highlighting the importance of </p>
-        <p>questioning the government as a civic duty. They celebrate dissent as essential to democracy, urging</p>
-        <p>marginalized voices to challenge established norms to promote equality and reshape governance for every citizen.</p>
+        <p>...."Injustice anywhere is a threat to justice everywhere." by Luther </p>
+        <p>Darkness cannot drive out darkness; only light can do that. Hate cannot drive out hate; only love can do that.</p>
+        <p>The time is always right to do what is right.".</p>
         </div>
         <div class="design3">
-        <p>.....Quotes on social justice emphasize that justice is a right for all, highlighting the importance of </p>
-        <p>questioning the government as a civic duty. They celebrate dissent as essential to democracy, urging</p>
-        <p>marginalized voices to challenge established norms to promote equality and reshape governance for every citizen.</p>
+        <p>..... Education is the most powerful weapon which you can use to change the world</p>
+        <p>questioning the government is your  civic duty. </p>
+        <p>I learned that courage was not the absence of fear, but the triumph over it.</p>
             
         </div>
     </div>

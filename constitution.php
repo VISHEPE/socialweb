@@ -1,51 +1,20 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Searchable PDF with Highlight and Scrollable Card</title>
-    <style>
-        /* Basic Styling */
-        body {
-            font-family: Arial, sans-serif;
-            padding: 20px;
-        }
+<?php
+include("header.php")
+?>
 
-        #search-bar {
-            margin-bottom: 10px;
-        }
 
-        /* Styling for scrollable PDF container */
-        .card {
-            border: 1px solid #ccc;
-            border-radius: 8px;
-            padding: 15px;
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-            width: 100%;
-            height: 600px;
-            overflow-y: scroll;
-            overflow-x: hidden;
-        }
 
-        canvas {
-            width: 100%;
-        }
-
-        .highlight {
-            background-color: yellow;
-        }
-    </style>
-</head>
 <body>
-    <h1>Searchable PDF Viewer with Highlight</h1>
+    <h1>KNOW YOUR CONSTITUTION</h1>
 
-    <!-- Search Bar -->
+    
     <div id="search-bar">
-        <input type="text" id="search-input" placeholder="Search PDF..." />
+        <span class="search-icon">🔍</span>
+        <input type="text" id="search-input" class="search-input" placeholder="Search PDF..." />
         <button id="search-button">Search</button>
     </div>
 
-    <!-- PDF Viewer within a Scrollable Card -->
+    
     <div class="card">
         <canvas id="pdf-viewer"></canvas>
     </div>
@@ -56,13 +25,13 @@
         const pdfViewer = document.getElementById('pdf-viewer');
         let pdfDoc = null;
         let canvasContext = pdfViewer.getContext('2d');
-        const scale = 1.5;  // Adjust for zoom/clarity
+        const scale = 1.5;  
         let currentSearchTerm = '';
 
-        // Load the PDF document
+       
         pdfjsLib.getDocument(url).promise.then(function(pdf) {
             pdfDoc = pdf;
-            renderPage(1);  // Load the first page initially
+            renderPage(1);  
         });
 
         // Render a specific page
@@ -72,7 +41,7 @@
                 pdfViewer.width = viewport.width;
                 pdfViewer.height = viewport.height;
 
-                // Clear previous content
+                
                 canvasContext.clearRect(0, 0, pdfViewer.width, pdfViewer.height);
 
                 const renderContext = {
@@ -80,9 +49,9 @@
                     viewport: viewport
                 };
 
-                // Render the page
+                
                 page.render(renderContext).promise.then(function() {
-                    // After rendering, highlight the search term if one is active
+                    
                     if (currentSearchTerm) {
                         highlightSearchTermOnPage(page, currentSearchTerm);
                     }
@@ -98,7 +67,7 @@
             }
         });
 
-        // Search and highlight term across all pages
+        
         function searchAndHighlight(searchTerm) {
             for (let pageNumber = 1; pageNumber <= pdfDoc.numPages; pageNumber++) {
                 pdfDoc.getPage(pageNumber).then(function(page) {
@@ -106,7 +75,7 @@
                         const textItems = textContent.items;
                         const pageText = textItems.map(item => item.str).join(' ').toLowerCase();
 
-                        // If search term is found on this page, render and highlight
+                        
                         if (pageText.includes(searchTerm)) {
                             renderPage(pageNumber);
                         }
@@ -120,7 +89,7 @@
             page.getTextContent().then(function(textContent) {
                 const textItems = textContent.items;
 
-                // Go through all text items and check for matches
+                
                 textItems.forEach(function(item) {
                     const lowerCaseStr = item.str.toLowerCase();
                     const startIndex = lowerCaseStr.indexOf(searchTerm);
@@ -134,18 +103,18 @@
 
                         // Calculate text position
                         const x = transform[4];
-                        const y = transform[5] - 10;  // Adjust based on text size
+                        const y = transform[5] - 10;  
 
-                        // Measure text width for highlight box
+                       
                         canvasContext.font = `${item.height}px sans-serif`;
                         const width = canvasContext.measureText(item.str).width;
                         const height = item.height;
 
-                        // Draw highlight rectangle
+                       
                         canvasContext.fillStyle = 'yellow';
                         canvasContext.fillRect(x, y, width, height);
 
-                        // Redraw the text on top of the highlight
+                        
                         canvasContext.fillStyle = 'black';
                         canvasContext.fillText(item.str, x, y + height);
                     }
@@ -153,5 +122,8 @@
             });
         }
     </script>
+    <?php
+include("footer.php")
+?>
 </body>
 </html>

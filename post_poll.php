@@ -4,7 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Post a Poll - Citizen Engagement Platform</title>
-    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+   
+
+    <?php include('header.php')
+?>
+
 </head>
 <body>
     <div class="container">
@@ -28,5 +32,8 @@
             <button type="submit" class="btn">Post Poll</button>
         </form>
     </div>
+    <?php
+include("footer.php")
+?>
 </body>
 </html>
