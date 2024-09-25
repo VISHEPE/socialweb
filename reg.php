@@ -1,3 +1,8 @@
+<?php
+require_once 'header.php'; 
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,7 +14,7 @@
 <body>
 
     <h2>Registration Form</h2>
-    <form id="registrationForm">
+    <form id="registrationForm" action="handler.php" method="POST">
         <label for="name">Name:</label>
         <input type="text" id="name" required>
         <span id="nameError" class="error"></span><br><br>
@@ -49,7 +54,7 @@
         <span id="termsError" class="error"></span><br><br>
 
         <button type="submit">Submit</button>
-        <a href="login.html">Have an account?Login</a>
+        <a href="login.php">Have an account?Login</a>
 
     </form>
 

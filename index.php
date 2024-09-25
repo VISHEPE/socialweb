@@ -1,6 +1,3 @@
-<?php
-require_once 'config.php'; 
-?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -13,16 +10,16 @@ require_once 'config.php';
 <body>
     <header>
         <div class="container">
-            <h1>Citizen Engagement Platform</h1>
+            <h1>Voices for Change: Citizen Engagement</h1>
             <nav class="main-nav">
                 <ul>
                     <li><a href="index.php">Home</a></li>
-                    <li><a href="petitions.html">Petitions</a></li>
+                    <li><a href="petitions.php">Petitions</a></li>
                     <li><a href="constitution.html">Constitution</a></li>
-                    <li><a href="polls.html">Opinion Polls</a></li>
+                    <li><a href="polls.php">Opinion Polls</a></li>
                     <li><a href="feedback.html">Policy Feedback</a></li>
-                    <li><a href="#feedback">Post a poll</a></li>
-                    <li><a href="reg.html">create account</a></li>
+                    <li><a href="post_poll.php">Post a poll</a></li>
+                    <li><a href="reg.php">create account</a></li>
                 </ul>
             </nav>
         </div>
@@ -35,13 +32,38 @@ require_once 'config.php';
 
     <div class="container1">
         <img src="vicky.png" alt="Placeholder Image" class="left-image">
-        <h1>Left Image Layout</h1>
-        <p>This example demonstrates how to place an image on the left side of a web page using HTML and CSS. The text wraps around the image, creating a natural flow in the layout.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <h1>Voices of Dissent: The Essence of Social Justice in Democracy</h1>
+        <p>Quotes on social justice emphasize that justice is a right for all, highlighting the importance of </p>
+        <p>questioning the government as a civic duty. They celebrate dissent as essential to democracy, urging</p>
+        <p>marginalized voices to challenge established norms to promote equality and reshape governance for every citizen.</p>
     </div>
 
-    
+    <div class="container2">
+        <div class="design1">
+        <p>....Quotes on social justice emphasize that justice is a right for all, highlighting the importance of </p>
+        <p>questioning the government as a civic duty. They celebrate dissent as essential to democracy, urging</p>
+        <p>marginalized voices to challenge established norms to promote equality and reshape governance for every citizen.</p>
+        </div>
+        <div class="design3">
+        <p>.....Quotes on social justice emphasize that justice is a right for all, highlighting the importance of </p>
+        <p>questioning the government as a civic duty. They celebrate dissent as essential to democracy, urging</p>
+        <p>marginalized voices to challenge established norms to promote equality and reshape governance for every citizen.</p>
+            
+        </div>
+    </div>
+
+    <footer>
+    <div class="container">
+        <p>&copy; 2024 Citizen Engagement Platform. All rights reserved.</p>
+        <div class="footer-nav">
+            <ul>
+                <li><a href="privacy.html">Privacy Policy</a></li>
+                <li><a href="terms.html">Terms of Service</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </div>
+    </div>
+</footer>
 
         
 </body>
