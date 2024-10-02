@@ -18,14 +18,14 @@
             $undecided_count = $row['option3'];
             $slug = $row['slug'];  
 
-            // Display the poll item
+            // poll item disply
             echo "<div class='petition-item'>";
             echo "<h3>$poll_question</h3>";
             echo "<p>Yes: $yes_count</p>";
             echo "<p>No: $no_count</p>";
             echo "<p>Undecided: $undecided_count</p>";
 
-            // Form to handle voting
+            
             echo "<form method='POST' action='sign_poll.php'>";
             echo "<input type='hidden' name='poll_id' value='".$row['id']."'>";
             echo "<button class='btn' name='vote' value='yes' type='submit'>Yes</button>";

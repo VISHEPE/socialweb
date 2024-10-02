@@ -21,7 +21,7 @@ include("header.php")
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.10.377/pdf.min.js"></script>
     <script>
-        const url = 'consti.pdf';  // Replace with the actual path to your PDF file
+        const url = 'consti.pdf';  //pdf path
         const pdfViewer = document.getElementById('pdf-viewer');
         let pdfDoc = null;
         let canvasContext = pdfViewer.getContext('2d');
@@ -34,7 +34,7 @@ include("header.php")
             renderPage(1);  
         });
 
-        // Render a specific page
+       //render pages
         function renderPage(pageNumber) {
             pdfDoc.getPage(pageNumber).then(function(page) {
                 const viewport = page.getViewport({ scale: scale });

@@ -1,15 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Post a Poll - Citizen Engagement Platform</title>
-   
+
 
     <?php include('header.php')
 ?>
 
-</head>
+
 <body>
     <div class="container">
         <h2>Post a New Poll</h2>
@@ -29,11 +23,9 @@
             <p>Option 2: No</p>
             <p>Option 3: Undecided</p>
 
-            <button type="submit" class="btn">Post Poll</button>
+            <button type="submit" class="search-button" >Post Poll</button>
         </form>
     </div>
-    <?php
-include("footer.php")
-?>
+  
 </body>
 </html>

@@ -1,0 +1,485 @@
+/* Global Styles */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: Open Sans, sans-serif;
+    line-height: 1.6;
+    color: #000000;
+    background-color: #FFFFFF;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #000000;
+  }
+  
+  a:hover {
+    color: #FFFFFF;
+    background-color: #F7F7F7;
+  }
+
+   h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    text-align: center;
+    
+  }
+  /* Header Styles */
+  
+  header {
+    background-color: #000000; 
+    padding: 20px;
+    text-align: center;
+    color: #FFFFFF; 
+  }
+  
+  header h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #FFFFFF; 
+  }
+  
+  .main-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .main-nav li {
+    margin-right: 20px;
+  }
+  
+  .main-nav a {
+    font-size: 18px;
+    transition: background-color 0.2s ease;
+    color: #FFFFFF; 
+  }
+  
+  .main-nav a:hover {
+    background-color: #F7F7F7;
+    color: #000000;
+  }
+  
+  /* Hero Section Styles */
+  
+  .container1 {
+    background-color: #FFFFFF;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .container1 img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    margin-bottom: 20px;
+  }
+  
+  .container1 h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+  }
+  
+  .container1 p {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .container1 button {
+    background-color: #000000;
+    color: #FFFFFF;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .container1 button:hover {
+    background-color: #333333;
+  }
+  
+  .container2 {
+    background-color: #F7F7F7;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .design1, .design3 {
+    margin-bottom: 20px;
+  }
+  
+  .design1 p, .design3 p {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  /* Footer Styles */
+  
+  footer {
+    background-color: #000000;
+    padding: 20px;
+    text-align: center;
+    color: #FFFFFF;
+  }
+  
+  footer p {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .footer-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .footer-nav li {
+    margin-right: 20px;
+  }
+  
+  .footer-nav a {
+    font-size: 18px;
+    transition: background-color 0.2s ease;
+  }
+  
+  .footer-nav a:hover {
+    background-color: #000000;
+    color: #FFFFFF;
+  }
+
+
+
+ .btn{ padding: 10px 20px;
+    background: #050505;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+ }
+
+
+  
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #4caf50;
+    color: #ffffff;
+    text-decoration: none; 
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.btn:hover {
+    background: #080808;
+}
+#feedback-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #2d5a2d;
+    border-radius: 5px;
+}
+#pdf-viewer {
+    margin-top: 20px;
+
+   
+}
+#pdf-search {
+    width: 70%;
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid #2d5a2d;
+    border-radius: 5px;
+
+  
+}
+#search-button {
+    padding: 10px 20px;
+    background: #4caf50;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#search-button:hover {
+    background: #45a049;
+}
+#pdf-container {
+    margin-top: 20px;
+    border: 1px solid #2d5a2d;
+    height: 300px;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-style: italic;
+    color: #666;
+
+
+
+}
+.petition-item, .poll-item {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+img {
+    float: left;
+    margin-right: 30px;
+    max-width: 100%;
+    height: auto;
+    width: 700px; 
+    border-radius: 30px;
+}
+
+
+
+.design1, .design3 {
+    background-color: #ffffff; 
+    padding: 20px; 
+    margin: 15px; 
+    border-radius: 10px; 
+    flex: 1; 
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); 
+  
+}
+
+
+
+
+
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+
+.governor-image {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+.feedback-success {
+    color: green;
+    font-weight: bold;
+    margin-top: 10px;
+}
+.containerx {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    padding: 20px;
+}
+
+
+.container {
+    max-width: 400px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.container form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 5px;
+}
+
+
+
+
+.container input[type="text"],
+.container input[type="email"],
+.container input[type="password"],
+.container select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.container input[type="submit"] {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.container input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+.container a {
+    text-align: center;
+    display: block;
+    margin-top: 10px;
+}
+
+.search-bar {
+    background-color: #F7F7F7;
+    padding: 20px;
+    text-align: center;
+}
+
+.search-input {
+    width: 70%;
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid #080808;
+    border-radius: 5px;
+}
+
+.search-button {
+    padding: 10px 20px;
+    background: #050505;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.search-button:hover {
+    background: #0c0c0c;
+}
+
+
+.leader-card {
+    background-color: #FFFFFF;
+    padding: 20px;
+    margin: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.leader-card img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.leader-card h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.leader-card .rating {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+/* Rating Form Styles */
+
+.rating-form {
+    margin-bottom: 20px;
+}
+
+.rating-form select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.rating-form .submit-rating {
+    padding: 10px 20px;
+    background: #4CAF50;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.rating-form .submit-rating:hover {
+    background: #45a049;
+}
+
+/* Comment Form Styles */
+
+.comment-form {
+    margin-bottom: 20px;
+}
+
+.comment-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.comment-form .submit-comment {
+    padding: 10px 20px;
+    background: #4CAF50;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.comment-form .submit-comment:hover {
+    background: #45a049;
+}
+
+/* County Projects Styles */
+
+.county-projects {
+    margin-bottom: 20px;
+}
+
+.county-projects h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.county-projects ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.county-projects li {
+    margin-bottom: 10px;
+}
+
+/* Next Card Indicator Styles */
+
+.next-card {
+    background-color: #F7F7F7;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.next-card p {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+

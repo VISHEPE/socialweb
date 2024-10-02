@@ -5,12 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Citizen Engagement Platform</title>
-    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="design.css">
 </head>
 <body></body>
 
 <footer>
-    <div class="container">
+    <div class="containerx">
         <p>&copy; 2024 Citizen Engagement Platform. All rights reserved.</p>
         <div class="footer-nav">
             <ul>

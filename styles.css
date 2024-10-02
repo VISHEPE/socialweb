@@ -25,24 +25,7 @@ label {
     margin-bottom: 5px;
 }
 
-.container {
-    width: 80%;
-    margin: auto;
-    overflow: hidden;
-    padding: 20px;
-}
-header {
-    background: #2d5a2d;
-    color: #ffffff;
-    padding-top: 30px;
-    min-height: 70px;
-    border-bottom: #1a3d1a 3px solid;
-}
-header h1 {
-    margin: 0;
-    text-align: center;
-    padding-bottom: 20px;
-}
+
 .main-nav {
     text-align: center;
     margin-bottom: 20px;
@@ -143,24 +126,6 @@ img {
 }
 
 
-.container1 {
-    clear: both; 
-    display: flex; 
-    align-items: center; 
-
-     
-}
-
-
-
-.container2 {
-    display: flex; 
-    justify-content: space-between; 
-    margin-top: 20px; 
-    width: 100%;
-    align-content: center;
-    align-items: center;
-}
 
 .design1, .design3 {
     background-color: #ffffff; 
@@ -173,38 +138,7 @@ img {
 }
 
 
-.design1, .design3 {
-    min-width: 300px; 
-}
 
-
-footer {
-    background: #2d5a2d; 
-    color: #ffffff; 
-    padding: 5px 0; 
-    margin-top: 20px; 
-    text-align: center; 
-}
-
-.footer-nav ul {
-    padding: 0;
-    list-style-type: none; 
-    margin: 10px 0; 
-}
-
-.footer-nav li {
-    display: inline; 
-    padding: 0 15px;
-}
-
-.footer-nav a {
-    color: #ffffff; 
-    text-decoration: none; 
-}
-
-.footer-nav a:hover {
-    text-decoration: underline;
-}
 
 
 form {
@@ -238,3 +172,21 @@ input[type="radio"] {
     margin-right: 10px;
 }
 
+
+.event {
+    background-color: #ffffff;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.event h3 {
+    font-size: 1.5rem;
+    color: #005bb5;
+}
+
+.event p {
+    margin: 10px 0;
+    line-height: 1.6;
+}

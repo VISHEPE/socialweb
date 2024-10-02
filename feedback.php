@@ -1,10 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Citizen Engagement Platform</title>
-    <link rel="stylesheet" type="text/css" href="styles.css">
+
     <?php 
     include("header.php");
     
@@ -14,11 +8,11 @@
     $username = 'root';  
     $password = '';  
     
-    // Feedback submission message
+    // submission message
     $feedbackMessage = '';
 
     try {
-        // Establish database connection using PDO
+        //connection using PDO
         $conn = new PDO("mysql:host=$host;dbname=$dbname", $username, $password);
        
         $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
@@ -26,7 +20,7 @@
         
         if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             $feedback_text = $_POST['feedback_text'];
-            // Prepare the SQL query to insert the feedback into the database
+            // insert the feedback into the database
             $stmt = $conn->prepare("INSERT INTO feedback (feedback_text) VALUES (:feedback_text)");
             $stmt->bindParam(':feedback_text', $feedback_text);
             $stmt->execute();
@@ -38,21 +32,15 @@
         echo "Connection failed: " . $e->getMessage();
     }
     ?>
-    <style>
-        .feedback-success {
-    color: green;
-    font-weight: bold;
-    margin-top: 10px;
-}
 
-    </style>
-</head>
+
+   
+
 <body>
 
 <section id="feedback" class="content-section">
     <h2>Policy Feedback</h2>
 
-    <!-- Display the feedback success message, if available -->
     <?php if ($feedbackMessage): ?>
         <p class="feedback-success"><?= htmlspecialchars($feedbackMessage) ?></p>
     <?php endif; ?>
@@ -64,7 +52,7 @@
     </form>
 </section>
 
-<?php include("footer.php"); ?>
 
 </body>
+
 </html>

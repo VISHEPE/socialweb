@@ -1,5 +1,5 @@
 <?php
-// sign_petition.php
+
 
 include('config.php'); 
 
@@ -11,7 +11,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $comment = mysqli_real_escape_string($conn, $_POST['comment']);
     $agreement = mysqli_real_escape_string($conn, $_POST['agreement']);
 
-    // Prepare and execute the insert query
+    // execute the insert query
     $sql = "INSERT INTO petition_signatures (petition_id, name, comment, agreement)
             VALUES ('$petition_id', '$name', '$comment', '$agreement')";
 
@@ -21,7 +21,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         echo "Error: " . mysqli_error($conn);
     }
 
-    // Close the database connection
     mysqli_close($conn);
 }
 
